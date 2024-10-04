@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/sd/Downloads/my_ULA/my_TESTBENCH.vhd" Line 116: &lt;<arg fmt="%s" index="1">a</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/sd/Downloads/my_ULA/my_TESTBENCH.vhd" Line 117: &lt;<arg fmt="%s" index="1">b</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/sd/Downloads/my_ULA/my_TESTBENCH.vhd" Line 118: &lt;<arg fmt="%s" index="1">s</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/sd/Downloads/my_ULA/my_TESTBENCH.vhd" Line 122: &lt;<arg fmt="%s" index="1">s</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/sd/Downloads/my_ULA/my_TESTBENCH.vhd" Line 126: &lt;<arg fmt="%s" index="1">s</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/sd/Downloads/my_ULA/my_TESTBENCH.vhd" Line 130: &lt;<arg fmt="%s" index="1">s</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/sd/Downloads/my_ULA/my_TESTBENCH.vhd" Line 134: &lt;<arg fmt="%s" index="1">s</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/sd/Downloads/my_ULA/my_TESTBENCH.vhd" Line 138: &lt;<arg fmt="%s" index="1">s</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/sd/Downloads/my_ULA/my_TESTBENCH.vhd" Line 142: &lt;<arg fmt="%s" index="1">s</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/sd/Downloads/my_ULA/my_TESTBENCH.vhd" Line 147: &lt;<arg fmt="%s" index="1">s</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="854" delta="unknown" >"/home/sd/Downloads/my_ULA/my_TESTBENCH.vhd" Line 38: Unit &lt;<arg fmt="%s" index="1">behavior</arg>&gt; ignored due to previous errors.
+</msg>
+
+</messages>
+

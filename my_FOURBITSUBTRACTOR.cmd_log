@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "/home/sd/Desktop/my_ULA/my_FOURBITSUBTRACTOR.xst" -ofn "/home/sd/Desktop/my_ULA/my_FOURBITSUBTRACTOR.syr" 
+xst -intstyle ise -ifn "/home/sd/Desktop/my_ULA/my_FOURBITSUBTRACTOR.xst" -ofn "/home/sd/Desktop/my_ULA/my_FOURBITSUBTRACTOR.syr" 
+xst -intstyle ise -ifn "/home/sd/Desktop/my_ULA/my_FOURBITSUBTRACTOR.xst" -ofn "/home/sd/Desktop/my_ULA/my_FOURBITSUBTRACTOR.syr" 
+xst -intstyle ise -ifn "/home/sd/Desktop/my_ULA/my_FOURBITSUBTRACTOR.xst" -ofn "/home/sd/Desktop/my_ULA/my_FOURBITSUBTRACTOR.syr" 
+xst -intstyle ise -ifn "/home/sd/Desktop/my_ULA/my_FOURBITSUBTRACTOR.xst" -ofn "/home/sd/Desktop/my_ULA/my_FOURBITSUBTRACTOR.syr" 
+xst -intstyle ise -ifn "/home/sd/Desktop/my_ULA/my_FOURBITSUBTRACTOR.xst" -ofn "/home/sd/Desktop/my_ULA/my_FOURBITSUBTRACTOR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm my_SUM.bmm -p xc3s700an-fgg484-4 my_FOURBITSUBTRACTOR.ngc my_FOURBITSUBTRACTOR.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_FOURBITSUBTRACTOR_map.ncd my_FOURBITSUBTRACTOR.ngd my_FOURBITSUBTRACTOR.pcf 
+par -w -intstyle ise -ol high -t 1 my_FOURBITSUBTRACTOR_map.ncd my_FOURBITSUBTRACTOR.ncd my_FOURBITSUBTRACTOR.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_FOURBITSUBTRACTOR.twx my_FOURBITSUBTRACTOR.ncd -o my_FOURBITSUBTRACTOR.twr my_FOURBITSUBTRACTOR.pcf 
+bitgen -intstyle ise -f my_FOURBITSUBTRACTOR.ut my_FOURBITSUBTRACTOR.ncd 
+xst -intstyle ise -ifn "/home/sd/Desktop/my_ULA/my_FOURBITSUBTRACTOR.xst" -ofn "/home/sd/Desktop/my_ULA/my_FOURBITSUBTRACTOR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm my_SUM.bmm -p xc3s700an-fgg484-4 my_FOURBITSUBTRACTOR.ngc my_FOURBITSUBTRACTOR.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_FOURBITSUBTRACTOR_map.ncd my_FOURBITSUBTRACTOR.ngd my_FOURBITSUBTRACTOR.pcf 
+par -w -intstyle ise -ol high -t 1 my_FOURBITSUBTRACTOR_map.ncd my_FOURBITSUBTRACTOR.ncd my_FOURBITSUBTRACTOR.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_FOURBITSUBTRACTOR.twx my_FOURBITSUBTRACTOR.ncd -o my_FOURBITSUBTRACTOR.twr my_FOURBITSUBTRACTOR.pcf 
+bitgen -intstyle ise -f my_FOURBITSUBTRACTOR.ut my_FOURBITSUBTRACTOR.ncd 

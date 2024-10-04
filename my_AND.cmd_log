@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "/home/sd/my_ULA/my_AND.xst" -ofn "/home/sd/my_ULA/my_AND.syr" 
+xst -intstyle ise -ifn "/home/sd/my_ULA/my_AND.xst" -ofn "/home/sd/my_ULA/my_AND.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 my_AND.ngc my_AND.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_AND_map.ncd my_AND.ngd my_AND.pcf 
+par -w -intstyle ise -ol high -t 1 my_AND_map.ncd my_AND.ncd my_AND.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_AND.twx my_AND.ncd -o my_AND.twr my_AND.pcf 
+bitgen -intstyle ise -f my_AND.ut my_AND.ncd 
+xst -intstyle ise -ifn "/home/sd/my_ULA/my_AND.xst" -ofn "/home/sd/my_ULA/my_AND.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 my_AND.ngc my_AND.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_AND_map.ncd my_AND.ngd my_AND.pcf 
+xst -intstyle ise -ifn "/home/sd/my_ULA/my_AND.xst" -ofn "/home/sd/my_ULA/my_AND.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 my_AND.ngc my_AND.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_AND_map.ncd my_AND.ngd my_AND.pcf 
+par -w -intstyle ise -ol high -t 1 my_AND_map.ncd my_AND.ncd my_AND.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_AND.twx my_AND.ncd -o my_AND.twr my_AND.pcf 
+bitgen -intstyle ise -f my_AND.ut my_AND.ncd 

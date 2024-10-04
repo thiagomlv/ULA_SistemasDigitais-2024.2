@@ -1,0 +1,70 @@
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.xst" -ofn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.syr" 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.xst" -ofn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.syr" 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.xst" -ofn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 my_STATEMACHINE.ngc my_STATEMACHINE.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_STATEMACHINE_map.ncd my_STATEMACHINE.ngd my_STATEMACHINE.pcf 
+par -w -intstyle ise -ol high -t 1 my_STATEMACHINE_map.ncd my_STATEMACHINE.ncd my_STATEMACHINE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_STATEMACHINE.twx my_STATEMACHINE.ncd -o my_STATEMACHINE.twr my_STATEMACHINE.pcf 
+bitgen -intstyle ise -f my_STATEMACHINE.ut my_STATEMACHINE.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 my_STATEMACHINE.ngc my_STATEMACHINE.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_STATEMACHINE_map.ncd my_STATEMACHINE.ngd my_STATEMACHINE.pcf 
+par -w -intstyle ise -ol high -t 1 my_STATEMACHINE_map.ncd my_STATEMACHINE.ncd my_STATEMACHINE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_STATEMACHINE.twx my_STATEMACHINE.ncd -o my_STATEMACHINE.twr my_STATEMACHINE.pcf 
+bitgen -intstyle ise -f my_STATEMACHINE.ut my_STATEMACHINE.ncd 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.xst" -ofn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s700an-fgg484-4 my_STATEMACHINE.ngc my_STATEMACHINE.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s700an-fgg484-4 my_STATEMACHINE.ngc my_STATEMACHINE.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_STATEMACHINE_map.ncd my_STATEMACHINE.ngd my_STATEMACHINE.pcf 
+par -w -intstyle ise -ol high -t 1 my_STATEMACHINE_map.ncd my_STATEMACHINE.ncd my_STATEMACHINE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_STATEMACHINE.twx my_STATEMACHINE.ncd -o my_STATEMACHINE.twr my_STATEMACHINE.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f my_STATEMACHINE.ut my_STATEMACHINE.ncd 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.xst" -ofn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s700an-fgg484-4 my_STATEMACHINE.ngc my_STATEMACHINE.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_STATEMACHINE_map.ncd my_STATEMACHINE.ngd my_STATEMACHINE.pcf 
+par -w -intstyle ise -ol high -t 1 my_STATEMACHINE_map.ncd my_STATEMACHINE.ncd my_STATEMACHINE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_STATEMACHINE.twx my_STATEMACHINE.ncd -o my_STATEMACHINE.twr my_STATEMACHINE.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f my_STATEMACHINE.ut my_STATEMACHINE.ncd 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.xst" -ofn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s700an-fgg484-4 my_STATEMACHINE.ngc my_STATEMACHINE.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_STATEMACHINE_map.ncd my_STATEMACHINE.ngd my_STATEMACHINE.pcf 
+par -w -intstyle ise -ol high -t 1 my_STATEMACHINE_map.ncd my_STATEMACHINE.ncd my_STATEMACHINE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_STATEMACHINE.twx my_STATEMACHINE.ncd -o my_STATEMACHINE.twr my_STATEMACHINE.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f my_STATEMACHINE.ut my_STATEMACHINE.ncd 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.xst" -ofn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s700an-fgg484-4 my_STATEMACHINE.ngc my_STATEMACHINE.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_STATEMACHINE_map.ncd my_STATEMACHINE.ngd my_STATEMACHINE.pcf 
+par -w -intstyle ise -ol high -t 1 my_STATEMACHINE_map.ncd my_STATEMACHINE.ncd my_STATEMACHINE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_STATEMACHINE.twx my_STATEMACHINE.ncd -o my_STATEMACHINE.twr my_STATEMACHINE.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f my_STATEMACHINE.ut my_STATEMACHINE.ncd 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.xst" -ofn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s700an-fgg484-4 my_STATEMACHINE.ngc my_STATEMACHINE.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_STATEMACHINE_map.ncd my_STATEMACHINE.ngd my_STATEMACHINE.pcf 
+par -w -intstyle ise -ol high -t 1 my_STATEMACHINE_map.ncd my_STATEMACHINE.ncd my_STATEMACHINE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_STATEMACHINE.twx my_STATEMACHINE.ncd -o my_STATEMACHINE.twr my_STATEMACHINE.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f my_STATEMACHINE.ut my_STATEMACHINE.ncd 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.xst" -ofn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s700an-fgg484-4 my_STATEMACHINE.ngc my_STATEMACHINE.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_STATEMACHINE_map.ncd my_STATEMACHINE.ngd my_STATEMACHINE.pcf 
+par -w -intstyle ise -ol high -t 1 my_STATEMACHINE_map.ncd my_STATEMACHINE.ncd my_STATEMACHINE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_STATEMACHINE.twx my_STATEMACHINE.ncd -o my_STATEMACHINE.twr my_STATEMACHINE.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f my_STATEMACHINE.ut my_STATEMACHINE.ncd 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.xst" -ofn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s700an-fgg484-4 my_STATEMACHINE.ngc my_STATEMACHINE.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_STATEMACHINE_map.ncd my_STATEMACHINE.ngd my_STATEMACHINE.pcf 
+par -w -intstyle ise -ol high -t 1 my_STATEMACHINE_map.ncd my_STATEMACHINE.ncd my_STATEMACHINE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_STATEMACHINE.twx my_STATEMACHINE.ncd -o my_STATEMACHINE.twr my_STATEMACHINE.pcf -ucf pinos.ucf 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.xst" -ofn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s700an-fgg484-4 my_STATEMACHINE.ngc my_STATEMACHINE.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_STATEMACHINE_map.ncd my_STATEMACHINE.ngd my_STATEMACHINE.pcf 
+par -w -intstyle ise -ol high -t 1 my_STATEMACHINE_map.ncd my_STATEMACHINE.ncd my_STATEMACHINE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_STATEMACHINE.twx my_STATEMACHINE.ncd -o my_STATEMACHINE.twr my_STATEMACHINE.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f my_STATEMACHINE.ut my_STATEMACHINE.ncd 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.xst" -ofn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.syr" 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.xst" -ofn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.syr" 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.xst" -ofn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.syr" 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.xst" -ofn "/home/sd/Downloads/my_ULA/my_STATEMACHINE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinos.ucf -p xc3s700an-fgg484-4 my_STATEMACHINE.ngc my_STATEMACHINE.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_STATEMACHINE_map.ncd my_STATEMACHINE.ngd my_STATEMACHINE.pcf 
+par -w -intstyle ise -ol high -t 1 my_STATEMACHINE_map.ncd my_STATEMACHINE.ncd my_STATEMACHINE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_STATEMACHINE.twx my_STATEMACHINE.ncd -o my_STATEMACHINE.twr my_STATEMACHINE.pcf -ucf pinos.ucf 
+bitgen -intstyle ise -f my_STATEMACHINE.ut my_STATEMACHINE.ncd 

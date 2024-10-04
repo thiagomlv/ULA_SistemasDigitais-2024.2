@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "/home/sd/my_ULA/my_FOURBITSUM.xst" -ofn "/home/sd/my_ULA/my_FOURBITSUM.syr" 
+xst -intstyle ise -ifn "/home/sd/my_ULA/my_FOURBITSUM.xst" -ofn "/home/sd/my_ULA/my_FOURBITSUM.syr" 
+xst -intstyle ise -ifn "/home/sd/my_ULA/my_FOURBITSUM.xst" -ofn "/home/sd/my_ULA/my_FOURBITSUM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm my_SUM.bmm -p xc3s700an-fgg484-4 my_FOURBITSUM.ngc my_FOURBITSUM.ngd  
+xst -intstyle ise -ifn "/home/sd/Desktop/my_ULA/my_FOURBITSUM.xst" -ofn "/home/sd/Desktop/my_ULA/my_FOURBITSUM.syr" 
+xst -intstyle ise -ifn "/home/sd/Desktop/my_ULA/my_FOURBITSUM.xst" -ofn "/home/sd/Desktop/my_ULA/my_FOURBITSUM.syr" 
+xst -intstyle ise -ifn "/home/sd/Desktop/my_ULA/my_FOURBITSUM.xst" -ofn "/home/sd/Desktop/my_ULA/my_FOURBITSUM.syr" 
+xst -intstyle ise -ifn "/home/sd/Desktop/my_ULA/my_FOURBITSUM.xst" -ofn "/home/sd/Desktop/my_ULA/my_FOURBITSUM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm my_SUM.bmm -p xc3s700an-fgg484-4 my_FOURBITSUM.ngc my_FOURBITSUM.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_FOURBITSUM_map.ncd my_FOURBITSUM.ngd my_FOURBITSUM.pcf 
+par -w -intstyle ise -ol high -t 1 my_FOURBITSUM_map.ncd my_FOURBITSUM.ncd my_FOURBITSUM.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_FOURBITSUM.twx my_FOURBITSUM.ncd -o my_FOURBITSUM.twr my_FOURBITSUM.pcf 
+bitgen -intstyle ise -f my_FOURBITSUM.ut my_FOURBITSUM.ncd 
+xst -intstyle ise -ifn "/home/sd/Desktop/my_ULA/my_FOURBITSUM.xst" -ofn "/home/sd/Desktop/my_ULA/my_FOURBITSUM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm my_SUM.bmm -p xc3s700an-fgg484-4 my_FOURBITSUM.ngc my_FOURBITSUM.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_FOURBITSUM_map.ncd my_FOURBITSUM.ngd my_FOURBITSUM.pcf 
+par -w -intstyle ise -ol high -t 1 my_FOURBITSUM_map.ncd my_FOURBITSUM.ncd my_FOURBITSUM.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_FOURBITSUM.twx my_FOURBITSUM.ncd -o my_FOURBITSUM.twr my_FOURBITSUM.pcf 
+bitgen -intstyle ise -f my_FOURBITSUM.ut my_FOURBITSUM.ncd 
+xst -intstyle ise -ifn "/home/sd/Desktop/my_ULA/my_FOURBITSUM.xst" -ofn "/home/sd/Desktop/my_ULA/my_FOURBITSUM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm my_SUM.bmm -p xc3s700an-fgg484-4 my_FOURBITSUM.ngc my_FOURBITSUM.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_FOURBITSUM_map.ncd my_FOURBITSUM.ngd my_FOURBITSUM.pcf 
+par -w -intstyle ise -ol high -t 1 my_FOURBITSUM_map.ncd my_FOURBITSUM.ncd my_FOURBITSUM.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_FOURBITSUM.twx my_FOURBITSUM.ncd -o my_FOURBITSUM.twr my_FOURBITSUM.pcf 
+bitgen -intstyle ise -f my_FOURBITSUM.ut my_FOURBITSUM.ncd 

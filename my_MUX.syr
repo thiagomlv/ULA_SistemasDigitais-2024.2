@@ -1,0 +1,486 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: my_MUX.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "my_MUX.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "my_MUX"
+Output Format                      : NGC
+Target Device                      : xc3s700an-4-fgg484
+
+---- Source Options
+Top Module Name                    : my_MUX
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_FULLADDER.vhd" in Library work.
+Architecture behavioral of Entity my_fulladder is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_FOURBITSUM.vhd" in Library work.
+Architecture behavioral of Entity my_fourbitsum is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_SUBTRACTOR1BIT.vhd" in Library work.
+Architecture behavioral of Entity my_subtractor1bit is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_AND.vhd" in Library work.
+Architecture behavioral of Entity my_and is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_NAND.vhd" in Library work.
+Architecture behavioral of Entity my_nand is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_OR.vhd" in Library work.
+Architecture behavioral of Entity my_or is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_NOR.vhd" in Library work.
+Architecture behavioral of Entity my_nor is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_NOT.vhd" in Library work.
+Architecture behavioral of Entity my_not is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_FOURBITSUBTRACTOR.vhd" in Library work.
+Architecture behavioral of Entity my_fourbitsubtractor is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_FOURBITMULTIPLIER.vhd" in Library work.
+Architecture behavioral of Entity my_fourbitmultiplier is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_MUX.vhd" in Library work.
+Entity <my_mux> compiled.
+Entity <my_mux> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <my_MUX> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_AND> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_NAND> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_OR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_NOR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_NOT> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_FOURBITSUM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_FOURBITSUBTRACTOR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_FOURBITMULTIPLIER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_FULLADDER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_SUBTRACTOR1BIT> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_FOURBITSUM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_FULLADDER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_FULLADDER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_FULLADDER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_FULLADDER> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <my_MUX> in library <work> (Architecture <behavioral>).
+Entity <my_MUX> analyzed. Unit <my_MUX> generated.
+
+Analyzing Entity <my_AND> in library <work> (Architecture <behavioral>).
+Entity <my_AND> analyzed. Unit <my_AND> generated.
+
+Analyzing Entity <my_NAND> in library <work> (Architecture <behavioral>).
+Entity <my_NAND> analyzed. Unit <my_NAND> generated.
+
+Analyzing Entity <my_OR> in library <work> (Architecture <behavioral>).
+Entity <my_OR> analyzed. Unit <my_OR> generated.
+
+Analyzing Entity <my_NOR> in library <work> (Architecture <behavioral>).
+Entity <my_NOR> analyzed. Unit <my_NOR> generated.
+
+Analyzing Entity <my_NOT> in library <work> (Architecture <behavioral>).
+Entity <my_NOT> analyzed. Unit <my_NOT> generated.
+
+Analyzing Entity <my_FOURBITSUM> in library <work> (Architecture <behavioral>).
+Entity <my_FOURBITSUM> analyzed. Unit <my_FOURBITSUM> generated.
+
+Analyzing Entity <my_FULLADDER> in library <work> (Architecture <behavioral>).
+Entity <my_FULLADDER> analyzed. Unit <my_FULLADDER> generated.
+
+Analyzing Entity <my_FOURBITSUBTRACTOR> in library <work> (Architecture <behavioral>).
+Entity <my_FOURBITSUBTRACTOR> analyzed. Unit <my_FOURBITSUBTRACTOR> generated.
+
+Analyzing Entity <my_SUBTRACTOR1BIT> in library <work> (Architecture <behavioral>).
+Entity <my_SUBTRACTOR1BIT> analyzed. Unit <my_SUBTRACTOR1BIT> generated.
+
+Analyzing Entity <my_FOURBITMULTIPLIER> in library <work> (Architecture <behavioral>).
+Entity <my_FOURBITMULTIPLIER> analyzed. Unit <my_FOURBITMULTIPLIER> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <my_AND>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_AND.vhd".
+Unit <my_AND> synthesized.
+
+
+Synthesizing Unit <my_NAND>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_NAND.vhd".
+Unit <my_NAND> synthesized.
+
+
+Synthesizing Unit <my_OR>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_OR.vhd".
+Unit <my_OR> synthesized.
+
+
+Synthesizing Unit <my_NOR>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_NOR.vhd".
+Unit <my_NOR> synthesized.
+
+
+Synthesizing Unit <my_NOT>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_NOT.vhd".
+Unit <my_NOT> synthesized.
+
+
+Synthesizing Unit <my_FULLADDER>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_FULLADDER.vhd".
+    Found 1-bit xor2 for signal <SUM>.
+    Found 1-bit xor2 for signal <XOR_1>.
+Unit <my_FULLADDER> synthesized.
+
+
+Synthesizing Unit <my_SUBTRACTOR1BIT>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_SUBTRACTOR1BIT.vhd".
+    Found 1-bit xor2 for signal <Difference>.
+    Found 1-bit xor2 for signal <XOR_1>.
+Unit <my_SUBTRACTOR1BIT> synthesized.
+
+
+Synthesizing Unit <my_FOURBITSUM>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_FOURBITSUM.vhd".
+Unit <my_FOURBITSUM> synthesized.
+
+
+Synthesizing Unit <my_FOURBITSUBTRACTOR>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_FOURBITSUBTRACTOR.vhd".
+WARNING:Xst:646 - Signal <borrow<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <my_FOURBITSUBTRACTOR> synthesized.
+
+
+Synthesizing Unit <my_FOURBITMULTIPLIER>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_FOURBITMULTIPLIER.vhd".
+WARNING:Xst:646 - Signal <SOMA_3<3:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <CARRY<2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <my_FOURBITMULTIPLIER> synthesized.
+
+
+Synthesizing Unit <my_MUX>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_MUX.vhd".
+WARNING:Xst:646 - Signal <carry_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 4-bit latch for signal <Y>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <my_MUX> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 1
+ 4-bit latch                                           : 1
+# Xors                                                 : 40
+ 1-bit xor2                                            : 40
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD1> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 1
+ 4-bit latch                                           : 1
+# Xors                                                 : 40
+ 1-bit xor2                                            : 40
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <my_MUX> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block my_MUX, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : my_MUX.ngr
+Top Level Output File Name         : my_MUX
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 16
+
+Cell Usage :
+# BELS                             : 55
+#      LUT2                        : 6
+#      LUT3                        : 11
+#      LUT4                        : 31
+#      MUXF5                       : 7
+# FlipFlops/Latches                : 4
+#      LD_1                        : 4
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 16
+#      IBUF                        : 12
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700anfgg484-4 
+
+ Number of Slices:                       27  out of   5888     0%  
+ Number of 4 input LUTs:                 48  out of  11776     0%  
+ Number of IOs:                          16
+ Number of bonded IOBs:                  16  out of    372     4%  
+    IOB Flip Flops:                       4
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+S<3>                               | IBUF+BUFG              | 4     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 8.994ns
+   Maximum output required time after clock: 5.668ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'S<3>'
+  Total number of paths / destination ports: 210 / 4
+-------------------------------------------------------------------------
+Offset:              8.994ns (Levels of Logic = 8)
+  Source:            B<0> (PAD)
+  Destination:       Y_3 (LATCH)
+  Destination Clock: S<3> rising
+
+  Data Path: B<0> to Y_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   0.849   1.013  B_0_IBUF (B_0_IBUF)
+     LUT4:I1->O            4   0.643   0.619  OP_ADD/ADD1/CARRY1 (OP_ADD/c<1>)
+     LUT3:I2->O            2   0.648   0.527  OP_ADD/ADD2/CARRY1 (OP_ADD/c<2>)
+     LUT3:I1->O            1   0.643   0.500  Y_mux0007<3>104 (Y_mux0007<3>104)
+     LUT4:I1->O            1   0.643   0.500  Y_mux0007<3>128 (Y_mux0007<3>128)
+     LUT2:I1->O            2   0.643   0.590  Y_mux0007<3>143 (Y_mux0007<3>143)
+     LUT4:I0->O            1   0.648   0.000  Y_mux0007<3>2972 (Y_mux0007<3>2971)
+     MUXF5:I0->O           1   0.276   0.000  Y_mux0007<3>297_f5 (Y_mux0007<3>)
+     LD_1:D                    0.252          Y_3
+    ----------------------------------------
+    Total                      8.994ns (5.245ns logic, 3.749ns route)
+                                       (58.3% logic, 41.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'S<3>'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.668ns (Levels of Logic = 1)
+  Source:            Y_3 (LATCH)
+  Destination:       Y<3> (PAD)
+  Source Clock:      S<3> rising
+
+  Data Path: Y_3 to Y<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD_1:G->Q             1   0.728   0.420  Y_3 (Y_3)
+     OBUF:I->O                 4.520          Y_3_OBUF (Y<3>)
+    ----------------------------------------
+    Total                      5.668ns (5.248ns logic, 0.420ns route)
+                                       (92.6% logic, 7.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.60 secs
+ 
+--> 
+
+
+Total memory usage is 611652 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

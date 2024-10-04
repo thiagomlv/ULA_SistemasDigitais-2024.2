@@ -1,0 +1,2 @@
+vhdl isim_temp "my_FOURBITSUM.vhd"
+vhdl isim_temp "teste_somador.vhd"

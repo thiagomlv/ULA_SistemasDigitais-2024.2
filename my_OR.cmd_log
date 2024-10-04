@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/sd/my_ULA/my_OR.xst" -ofn "/home/sd/my_ULA/my_OR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 my_OR.ngc my_OR.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_OR_map.ncd my_OR.ngd my_OR.pcf 
+par -w -intstyle ise -ol high -t 1 my_OR_map.ncd my_OR.ncd my_OR.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_OR.twx my_OR.ncd -o my_OR.twr my_OR.pcf 
+bitgen -intstyle ise -f my_OR.ut my_OR.ncd 

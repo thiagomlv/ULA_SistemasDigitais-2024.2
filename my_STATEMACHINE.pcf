@@ -1,0 +1,29 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Oct 02 14:39:38 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "but_reset" LOCATE = SITE "T16" LEVEL 1;
+PIN but_reset_pin<0> = BEL "but_reset" PINNAME PAD;
+PIN "but_reset_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "but_S" LOCATE = SITE "T14" LEVEL 1;
+COMP "clk_50" LOCATE = SITE "E12" LEVEL 1;
+COMP "LD6_B" LOCATE = SITE "Y22" LEVEL 1;
+COMP "LD5_S" LOCATE = SITE "V20" LEVEL 1;
+COMP "LD4_OUT" LOCATE = SITE "V19" LEVEL 1;
+COMP "leds_direita<0>" LOCATE = SITE "R20" LEVEL 1;
+COMP "LD7_A" LOCATE = SITE "W21" LEVEL 1;
+COMP "leds_direita<1>" LOCATE = SITE "T19" LEVEL 1;
+COMP "leds_direita<2>" LOCATE = SITE "U20" LEVEL 1;
+COMP "leds_direita<3>" LOCATE = SITE "U19" LEVEL 1;
+COMP "but_A" LOCATE = SITE "T15" LEVEL 1;
+COMP "input<0>" LOCATE = SITE "V8" LEVEL 1;
+COMP "but_B" LOCATE = SITE "U15" LEVEL 1;
+COMP "input<1>" LOCATE = SITE "U10" LEVEL 1;
+COMP "input<2>" LOCATE = SITE "U8" LEVEL 1;
+COMP "input<3>" LOCATE = SITE "T9" LEVEL 1;
+NET "clk_50_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+OFFSET = IN 10 ns VALID 20 ns BEFORE COMP "clk_50";
+OFFSET = OUT 20 ns AFTER COMP "clk_50";
+SCHEMATIC END;
+

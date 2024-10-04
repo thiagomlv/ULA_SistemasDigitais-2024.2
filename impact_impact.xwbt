@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/sd/Downloads/my_ULA/impact.xsl
+OUTFILE=/home/sd/Downloads/my_ULA/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/home/sd/Downloads/my_ULA
+LICENSE=iMPACT
+USER_INFO=iMPACT

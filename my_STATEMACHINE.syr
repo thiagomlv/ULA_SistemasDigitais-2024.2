@@ -1,0 +1,948 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: my_STATEMACHINE.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "my_STATEMACHINE.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "my_STATEMACHINE"
+Output Format                      : NGC
+Target Device                      : xc3s700an-4-fgg484
+
+---- Source Options
+Top Module Name                    : my_STATEMACHINE
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_FULLADDER.vhd" in Library work.
+Architecture behavioral of Entity my_fulladder is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_FOURBITSUM.vhd" in Library work.
+Architecture behavioral of Entity my_fourbitsum is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_SUBTRACTOR1BIT.vhd" in Library work.
+Architecture behavioral of Entity my_subtractor1bit is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_AND.vhd" in Library work.
+Architecture behavioral of Entity my_and is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_NAND.vhd" in Library work.
+Architecture behavioral of Entity my_nand is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_OR.vhd" in Library work.
+Architecture behavioral of Entity my_or is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_NOR.vhd" in Library work.
+Architecture behavioral of Entity my_nor is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_NOT.vhd" in Library work.
+Architecture behavioral of Entity my_not is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_FOURBITSUBTRACTOR.vhd" in Library work.
+Architecture behavioral of Entity my_fourbitsubtractor is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_FOURBITMULTIPLIER.vhd" in Library work.
+Architecture behavioral of Entity my_fourbitmultiplier is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_FREQDIV.vhd" in Library work.
+Entity <my_freqdiv> compiled.
+Entity <my_freqdiv> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_MUX.vhd" in Library work.
+Architecture behavioral of Entity my_mux is up to date.
+Compiling vhdl file "/home/sd/Downloads/my_ULA/my_STATEMACHINE.vhd" in Library work.
+Entity <my_statemachine> compiled.
+Entity <my_statemachine> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <my_STATEMACHINE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_FREQDIV> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_MUX> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_AND> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_NAND> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_OR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_NOR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_NOT> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_FOURBITSUM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_FOURBITSUBTRACTOR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_FOURBITMULTIPLIER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_FULLADDER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_SUBTRACTOR1BIT> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_FOURBITSUM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_FULLADDER> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <my_STATEMACHINE> in library <work> (Architecture <behavioral>).
+Entity <my_STATEMACHINE> analyzed. Unit <my_STATEMACHINE> generated.
+
+Analyzing Entity <my_FREQDIV> in library <work> (Architecture <behavioral>).
+Entity <my_FREQDIV> analyzed. Unit <my_FREQDIV> generated.
+
+Analyzing Entity <my_MUX> in library <work> (Architecture <behavioral>).
+Entity <my_MUX> analyzed. Unit <my_MUX> generated.
+
+Analyzing Entity <my_AND> in library <work> (Architecture <behavioral>).
+Entity <my_AND> analyzed. Unit <my_AND> generated.
+
+Analyzing Entity <my_NAND> in library <work> (Architecture <behavioral>).
+Entity <my_NAND> analyzed. Unit <my_NAND> generated.
+
+Analyzing Entity <my_OR> in library <work> (Architecture <behavioral>).
+Entity <my_OR> analyzed. Unit <my_OR> generated.
+
+Analyzing Entity <my_NOR> in library <work> (Architecture <behavioral>).
+Entity <my_NOR> analyzed. Unit <my_NOR> generated.
+
+Analyzing Entity <my_NOT> in library <work> (Architecture <behavioral>).
+Entity <my_NOT> analyzed. Unit <my_NOT> generated.
+
+Analyzing Entity <my_FOURBITSUM> in library <work> (Architecture <behavioral>).
+Entity <my_FOURBITSUM> analyzed. Unit <my_FOURBITSUM> generated.
+
+Analyzing Entity <my_FULLADDER> in library <work> (Architecture <behavioral>).
+Entity <my_FULLADDER> analyzed. Unit <my_FULLADDER> generated.
+
+Analyzing Entity <my_FOURBITSUBTRACTOR> in library <work> (Architecture <behavioral>).
+Entity <my_FOURBITSUBTRACTOR> analyzed. Unit <my_FOURBITSUBTRACTOR> generated.
+
+Analyzing Entity <my_SUBTRACTOR1BIT> in library <work> (Architecture <behavioral>).
+Entity <my_SUBTRACTOR1BIT> analyzed. Unit <my_SUBTRACTOR1BIT> generated.
+
+Analyzing Entity <my_FOURBITMULTIPLIER> in library <work> (Architecture <behavioral>).
+Entity <my_FOURBITMULTIPLIER> analyzed. Unit <my_FOURBITMULTIPLIER> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <my_FREQDIV>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_FREQDIV.vhd".
+    Found 26-bit up counter for signal <counter>.
+    Found 1-bit register for signal <saida>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <my_FREQDIV> synthesized.
+
+
+Synthesizing Unit <my_AND>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_AND.vhd".
+Unit <my_AND> synthesized.
+
+
+Synthesizing Unit <my_NAND>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_NAND.vhd".
+Unit <my_NAND> synthesized.
+
+
+Synthesizing Unit <my_OR>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_OR.vhd".
+Unit <my_OR> synthesized.
+
+
+Synthesizing Unit <my_NOR>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_NOR.vhd".
+Unit <my_NOR> synthesized.
+
+
+Synthesizing Unit <my_NOT>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_NOT.vhd".
+Unit <my_NOT> synthesized.
+
+
+Synthesizing Unit <my_FULLADDER>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_FULLADDER.vhd".
+    Found 1-bit xor2 for signal <SUM>.
+    Found 1-bit xor2 for signal <XOR_1>.
+Unit <my_FULLADDER> synthesized.
+
+
+Synthesizing Unit <my_SUBTRACTOR1BIT>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_SUBTRACTOR1BIT.vhd".
+    Found 1-bit xor2 for signal <Difference>.
+    Found 1-bit xor2 for signal <XOR_1>.
+Unit <my_SUBTRACTOR1BIT> synthesized.
+
+
+Synthesizing Unit <my_FOURBITSUM>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_FOURBITSUM.vhd".
+Unit <my_FOURBITSUM> synthesized.
+
+
+Synthesizing Unit <my_FOURBITSUBTRACTOR>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_FOURBITSUBTRACTOR.vhd".
+WARNING:Xst:646 - Signal <borrow<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <my_FOURBITSUBTRACTOR> synthesized.
+
+
+Synthesizing Unit <my_FOURBITMULTIPLIER>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_FOURBITMULTIPLIER.vhd".
+WARNING:Xst:646 - Signal <SOMA_3<3:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <CARRY<2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <my_FOURBITMULTIPLIER> synthesized.
+
+
+Synthesizing Unit <my_MUX>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_MUX.vhd".
+WARNING:Xst:646 - Signal <carry_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 4-bit latch for signal <Y>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <my_MUX> synthesized.
+
+
+Synthesizing Unit <my_STATEMACHINE>.
+    Related source file is "/home/sd/Downloads/my_ULA/my_STATEMACHINE.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <LD7_A>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <A>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <B>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <S>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD4_OUT>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD5_S>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD6_B>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <state_1> of Case statement line 102 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <state_1> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <state_1>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <state_1> of Case statement line 102 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <state_1> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <state_1> of Case statement line 102 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <state_1> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <state_1> of Case statement line 102 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <state_1> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <state_1> of Case statement line 102 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <state_1> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+WARNING:Xst:737 - Found 35-bit latch for signal <aux>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 4-bit latch for signal <leds_direita>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 35-bit register for signal <state_1>.
+    Summary:
+	inferred  35 D-type flip-flop(s).
+Unit <my_STATEMACHINE> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 35-bit register                                       : 1
+# Latches                                              : 17
+ 1-bit latch                                           : 4
+ 35-bit latch                                          : 1
+ 4-bit latch                                           : 12
+# Xors                                                 : 320
+ 1-bit xor2                                            : 320
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD1> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD1> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD1> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD1> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD1> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD1> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD1> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD1> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD2> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ADD3> is unconnected in block <soma_aux3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NAND> is unconnected in block <op_AND>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_OR> is unconnected in block <op_AND>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NOR> is unconnected in block <op_AND>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NOT> is unconnected in block <op_AND>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_ADD> is unconnected in block <op_AND>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_SUB> is unconnected in block <op_AND>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_MULT> is unconnected in block <op_AND>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_AND> is unconnected in block <op_NAND>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_OR> is unconnected in block <op_NAND>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NOR> is unconnected in block <op_NAND>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NOT> is unconnected in block <op_NAND>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_ADD> is unconnected in block <op_NAND>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_SUB> is unconnected in block <op_NAND>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_MULT> is unconnected in block <op_NAND>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_AND> is unconnected in block <op_OR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NAND> is unconnected in block <op_OR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NOR> is unconnected in block <op_OR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NOT> is unconnected in block <op_OR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_ADD> is unconnected in block <op_OR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_SUB> is unconnected in block <op_OR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_MULT> is unconnected in block <op_OR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_AND> is unconnected in block <op_NOR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NAND> is unconnected in block <op_NOR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_OR> is unconnected in block <op_NOR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NOT> is unconnected in block <op_NOR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_ADD> is unconnected in block <op_NOR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_SUB> is unconnected in block <op_NOR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_MULT> is unconnected in block <op_NOR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_AND> is unconnected in block <op_NOT>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NAND> is unconnected in block <op_NOT>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_OR> is unconnected in block <op_NOT>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NOR> is unconnected in block <op_NOT>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_ADD> is unconnected in block <op_NOT>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_SUB> is unconnected in block <op_NOT>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_MULT> is unconnected in block <op_NOT>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_AND> is unconnected in block <op_ADD>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NAND> is unconnected in block <op_ADD>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_OR> is unconnected in block <op_ADD>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NOR> is unconnected in block <op_ADD>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NOT> is unconnected in block <op_ADD>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_SUB> is unconnected in block <op_ADD>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_MULT> is unconnected in block <op_ADD>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_AND> is unconnected in block <op_SUB>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NAND> is unconnected in block <op_SUB>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_OR> is unconnected in block <op_SUB>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NOR> is unconnected in block <op_SUB>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NOT> is unconnected in block <op_SUB>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_ADD> is unconnected in block <op_SUB>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_MULT> is unconnected in block <op_SUB>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_AND> is unconnected in block <op_MULT>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NAND> is unconnected in block <op_MULT>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_OR> is unconnected in block <op_MULT>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NOR> is unconnected in block <op_MULT>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_NOT> is unconnected in block <op_MULT>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_ADD> is unconnected in block <op_MULT>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OP_SUB> is unconnected in block <op_MULT>.
+   It will be removed from the design.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <0>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <1>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <2>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <3>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <0>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <1>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <2>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <3>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <0>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <1>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <2>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <3>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <0>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <1>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <2>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <3>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <0>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <1>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <2>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <3>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <0>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <1>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <2>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <3>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <0>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <1>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <2>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <3>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <0>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <1>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <2>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <3>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 36
+ Flip-Flops                                            : 36
+# Latches                                              : 17
+ 1-bit latch                                           : 4
+ 35-bit latch                                          : 1
+ 4-bit latch                                           : 12
+# Xors                                                 : 320
+ 1-bit xor2                                            : 320
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1294 - Latch <op_MULT/Y_3> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_MULT/Y_2> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_MULT/Y_1> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_MULT/Y_0> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_SUB/Y_3> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_SUB/Y_2> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_SUB/Y_1> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_SUB/Y_0> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_ADD/Y_3> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_ADD/Y_2> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_ADD/Y_1> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_ADD/Y_0> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_NOT/Y_3> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_NOT/Y_2> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_NOT/Y_1> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_NOT/Y_0> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_NOR/Y_3> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_NOR/Y_2> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_NOR/Y_1> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_NOR/Y_0> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_OR/Y_3> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_OR/Y_2> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_OR/Y_1> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_OR/Y_0> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_NAND/Y_3> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_NAND/Y_2> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_NAND/Y_1> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_NAND/Y_0> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_AND/Y_3> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_AND/Y_2> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_AND/Y_1> is equivalent to a wire in block <my_STATEMACHINE>.
+WARNING:Xst:1294 - Latch <op_AND/Y_0> is equivalent to a wire in block <my_STATEMACHINE>.
+
+Optimizing unit <my_STATEMACHINE> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block my_STATEMACHINE, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 62
+ Flip-Flops                                            : 62
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : my_STATEMACHINE.ngr
+Top Level Output File Name         : my_STATEMACHINE
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 242
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 25
+#      LUT2                        : 33
+#      LUT3                        : 24
+#      LUT4                        : 86
+#      MUXCY                       : 32
+#      MUXF5                       : 12
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 117
+#      FD                          : 35
+#      FDE                         : 1
+#      FDR                         : 26
+#      LD                          : 39
+#      LD_1                        : 4
+#      LDE_1                       : 12
+# Clock Buffers                    : 4
+#      BUFG                        : 3
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 8
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700anfgg484-4 
+
+ Number of Slices:                       98  out of   5888     1%  
+ Number of Slice Flip Flops:            109  out of  11776     0%  
+ Number of 4 input LUTs:                170  out of  11776     1%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    372     4%  
+    IOB Flip Flops:                       8
+ Number of GCLKs:                         4  out of     24    16%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------+------------------------+-------+
+Clock Signal                                  | Clock buffer(FF name)  | Load  |
+----------------------------------------------+------------------------+-------+
+divisor_freq/saida1                           | BUFG                   | 35    |
+but_reset                                     | IBUF+BUFG              | 16    |
+leds_direita_not0001(leds_direita_not000132:O)| NONE(*)(leds_direita_0)| 4     |
+clk_50                                        | BUFGP                  | 27    |
+aux_not00011(aux_not00011:O)                  | BUFG(*)(aux_0)         | 35    |
+----------------------------------------------+------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.057ns (Maximum Frequency: 197.760MHz)
+   Minimum input arrival time before clock: 5.706ns
+   Maximum output required time after clock: 5.668ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'but_reset'
+  Clock period: 2.677ns (frequency: 373.552MHz)
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Delay:               2.677ns (Levels of Logic = 1)
+  Source:            A_1 (LATCH)
+  Destination:       A_1 (LATCH)
+  Source Clock:      but_reset rising
+  Destination Clock: but_reset rising
+
+  Data Path: A_1 to A_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q           15   0.728   1.049  A_1 (A_1)
+     LUT3:I2->O            1   0.648   0.000  A_mux0002<1>1 (A_mux0002<1>)
+     LDE_1:D                   0.252          A_1
+    ----------------------------------------
+    Total                      2.677ns (1.628ns logic, 1.049ns route)
+                                       (60.8% logic, 39.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_50'
+  Clock period: 5.057ns (frequency: 197.760MHz)
+  Total number of paths / destination ports: 1054 / 54
+-------------------------------------------------------------------------
+Delay:               5.057ns (Levels of Logic = 8)
+  Source:            divisor_freq/counter_5 (FF)
+  Destination:       divisor_freq/counter_0 (FF)
+  Source Clock:      clk_50 rising
+  Destination Clock: clk_50 rising
+
+  Data Path: divisor_freq/counter_5 to divisor_freq/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.590  divisor_freq/counter_5 (divisor_freq/counter_5)
+     LUT2:I0->O            1   0.648   0.000  divisor_freq/counter_cmp_eq0000_wg_lut<0> (divisor_freq/counter_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  divisor_freq/counter_cmp_eq0000_wg_cy<0> (divisor_freq/counter_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  divisor_freq/counter_cmp_eq0000_wg_cy<1> (divisor_freq/counter_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  divisor_freq/counter_cmp_eq0000_wg_cy<2> (divisor_freq/counter_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  divisor_freq/counter_cmp_eq0000_wg_cy<3> (divisor_freq/counter_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  divisor_freq/counter_cmp_eq0000_wg_cy<4> (divisor_freq/counter_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  divisor_freq/counter_cmp_eq0000_wg_cy<5> (divisor_freq/counter_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O          27   0.141   1.261  divisor_freq/counter_cmp_eq0000_wg_cy<6> (divisor_freq/counter_cmp_eq0000)
+     FDR:R                     0.869          divisor_freq/counter_0
+    ----------------------------------------
+    Total                      5.057ns (3.206ns logic, 1.851ns route)
+                                       (63.4% logic, 36.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'leds_direita_not0001'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.158ns (Levels of Logic = 2)
+  Source:            but_reset (PAD)
+  Destination:       leds_direita_0 (LATCH)
+  Destination Clock: leds_direita_not0001 falling
+
+  Data Path: but_reset to leds_direita_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            45   0.849   1.409  but_reset_IBUF (but_reset_IBUF1)
+     LUT3:I0->O            1   0.648   0.000  leds_direita_mux0001<0>98 (leds_direita_mux0001<0>)
+     LD:D                      0.252          leds_direita_0
+    ----------------------------------------
+    Total                      3.158ns (1.749ns logic, 1.409ns route)
+                                       (55.4% logic, 44.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'but_reset'
+  Total number of paths / destination ports: 24 / 12
+-------------------------------------------------------------------------
+Offset:              2.600ns (Levels of Logic = 2)
+  Source:            but_S (PAD)
+  Destination:       S_0 (LATCH)
+  Destination Clock: but_reset rising
+
+  Data Path: but_S to S_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.849   0.851  but_S_IBUF (but_S_IBUF)
+     LUT3:I0->O            1   0.648   0.000  S_mux0001<3>1 (S_mux0001<3>)
+     LDE_1:D                   0.252          S_3
+    ----------------------------------------
+    Total                      2.600ns (1.749ns logic, 0.851ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'aux_not00011'
+  Total number of paths / destination ports: 60 / 35
+-------------------------------------------------------------------------
+Offset:              5.706ns (Levels of Logic = 4)
+  Source:            but_reset (PAD)
+  Destination:       aux_7 (LATCH)
+  Destination Clock: aux_not00011 falling
+
+  Data Path: but_reset to aux_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            45   0.849   1.409  but_reset_IBUF (but_reset_IBUF1)
+     LUT4:I0->O            4   0.648   0.730  aux_mux0010<11>11 (N10)
+     LUT3:I0->O            2   0.648   0.527  aux_mux0010<3>11 (N311)
+     LUT4:I1->O            1   0.643   0.000  aux_mux0010<7>1 (aux_mux0010<7>)
+     LD:D                      0.252          aux_7
+    ----------------------------------------
+    Total                      5.706ns (3.040ns logic, 2.666ns route)
+                                       (53.3% logic, 46.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'but_reset'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.668ns (Levels of Logic = 1)
+  Source:            LD7_A (LATCH)
+  Destination:       LD7_A (PAD)
+  Source Clock:      but_reset rising
+
+  Data Path: LD7_A to LD7_A
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD_1:G->Q             1   0.728   0.420  LD7_A (LD7_A_OBUF)
+     OBUF:I->O                 4.520          LD7_A_OBUF (LD7_A)
+    ----------------------------------------
+    Total                      5.668ns (5.248ns logic, 0.420ns route)
+                                       (92.6% logic, 7.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'leds_direita_not0001'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.668ns (Levels of Logic = 1)
+  Source:            leds_direita_3 (LATCH)
+  Destination:       leds_direita<3> (PAD)
+  Source Clock:      leds_direita_not0001 falling
+
+  Data Path: leds_direita_3 to leds_direita<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.728   0.420  leds_direita_3 (leds_direita_3)
+     OBUF:I->O                 4.520          leds_direita_3_OBUF (leds_direita<3>)
+    ----------------------------------------
+    Total                      5.668ns (5.248ns logic, 0.420ns route)
+                                       (92.6% logic, 7.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.61 secs
+ 
+--> 
+
+
+Total memory usage is 625676 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  182 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

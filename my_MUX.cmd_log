@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_MUX.xst" -ofn "/home/sd/Downloads/my_ULA/my_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 my_MUX.ngc my_MUX.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_MUX_map.ncd my_MUX.ngd my_MUX.pcf 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_MUX.xst" -ofn "/home/sd/Downloads/my_ULA/my_MUX.syr" 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_MUX.xst" -ofn "/home/sd/Downloads/my_ULA/my_MUX.syr" 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_MUX.xst" -ofn "/home/sd/Downloads/my_ULA/my_MUX.syr" 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_MUX.xst" -ofn "/home/sd/Downloads/my_ULA/my_MUX.syr" 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_MUX.xst" -ofn "/home/sd/Downloads/my_ULA/my_MUX.syr" 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_MUX.xst" -ofn "/home/sd/Downloads/my_ULA/my_MUX.syr" 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_MUX.xst" -ofn "/home/sd/Downloads/my_ULA/my_MUX.syr" 
+xst -intstyle ise -ifn "/home/sd/Downloads/my_ULA/my_MUX.xst" -ofn "/home/sd/Downloads/my_ULA/my_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 my_MUX.ngc my_MUX.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o my_MUX_map.ncd my_MUX.ngd my_MUX.pcf 
+par -w -intstyle ise -ol high -t 1 my_MUX_map.ncd my_MUX.ncd my_MUX.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_MUX.twx my_MUX.ncd -o my_MUX.twr my_MUX.pcf 
+bitgen -intstyle ise -f my_MUX.ut my_MUX.ncd 
